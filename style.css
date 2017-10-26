@@ -1,0 +1,242 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*common*/
+
+body {
+	margin: 0;
+	font-size: 14px;
+	font-family: Verdana,"sans-serif";
+	color:#111111;
+}
+
+a {
+	text-decoration: none;
+}
+
+p {
+	line-height: 2;
+}
+
+
+.btn {
+	display: inline-block;
+	width: 290px;
+	line-height: 45px;
+	background: #E16900;
+	text-align: center;
+	color: #fff;
+	border-radius: 5px;
+	opacity: 0.9;
+	font-size: 16px;
+}
+
+
+
+.btn:hover {
+	opacity: 1;
+}
+
+img.shadow {
+	box-shadow: 0 0 10px rgba(0,0,0,0.3)
+}
+
+
+section {
+	padding: 90px 0;
+}
+
+section:nth-child(odd) {
+	background: #BFBFBF;
+}
+
+section .container {
+	width: 820px;
+	margin: 0 auto;
+}
+
+section h2 {
+	font-size: 26px;
+	text-align: center;
+	margin: 0 0 90px;
+	font-weight: normal;
+}
+
+section:not(.call-to-action)
+h2:after {
+/*	content: ' - title -';*/
+	display:block;
+	font-size: 18px;
+	color: #252222;
+	padding-top: 10px;
+}
+
+
+/*ヘッダー*/
+
+header {
+	background: url('img/header.jpg');
+	background-size: cover;
+	background-position: 70% 70%;
+}
+
+header .container {
+	width: 820px;
+	margin: 0 auto;
+	height: 320px;
+	padding-top: 10px; /*これが無いとヘッダー画像上にｐタグの分の余白ができるので親要素で打ち消す*/
+	position: relative;
+	overflow: hidden;
+}
+
+header h1, header p {
+	color: #fff;
+}
+
+header p {
+	padding-top: 50px;
+}
+
+header h1 {
+	font-size: 34px;
+	margin-bottom: 50px;
+}
+
+header img {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+
+.stone {
+	padding-left: 5px;
+}
+
+/*features*/
+
+.features h2:after {
+	content: ' - Contents -';
+}
+
+.desc {
+	width: 360px;
+}
+
+.pull-right{
+	float: right;
+	padding-left: 40px;
+}
+
+.pull-left{
+	float: left;
+	padding-right: 40px;
+}
+
+.row {
+	overflow: hidden;
+	margin-bottom: 90px;
+}
+
+.row:last-child {
+	margin-bottom: 0px;
+}
+
+.features h3 {
+	font-size: 24px;
+}
+
+
+
+/*voices*/
+.voices h2:after {
+	content: ' - voices -';
+}
+
+.user img{
+	border-radius: 50%;
+	border: 10px solid #fff;
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	top: -60px;
+}
+
+.user {
+	background: #fff;
+	width: 250px;
+	box-sizing: border-box;
+	padding: 65px 40px 26px;
+	position: relative;
+}
+
+.voices .container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.voices h2 {
+	margin-bottom: 150px;
+}
+
+.user h3 {
+	text-align: center;
+}
+
+/*call-to-action*/
+
+.call-to-action {
+	height: 480px;
+	background: url('img/igodotcom.jpg');
+	background-size: cover;
+	
+	text-align: center;
+background-position: 20% 40%;
+}
+
+.call-to-action h2 {
+	color: #fff;
+	margin-bottom: 50px;
+}
+
+
+.shop {
+	width: 400px;
+	float:left;
+	text-align: center;
+}
+
+
+
+
+
+/*footer*/
+footer {
+	padding: 10px;
+	text-align: center;
+	color: #ccc;
+}
+
+footer p{
+	color: #252222;
+}
+
+
+/*レスポンシブ*/
+
+/*599px以下*/
+@media (max-width: 599px){
+	
+}
+
+
+/*600px~767未満*/
+@media (min-width: 600px)and (max-width: 850px){
+	.voices .container {
+}
+}
+
+/*868以上*/
+@media (min-width: 868px){
+	
+}
